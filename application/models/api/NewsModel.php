@@ -56,7 +56,7 @@ class NewsModel extends Render_Model
           'id' => $input['id'],
           'name' => $input['nama']
         ],
-        "author" => null,
+        "author" => $input['user_nama'],
         "title" => $input['nama'],
         "description" => $input['excerpt'],
         "url" => base_url('artikel/detail/') . $input['slug'],
