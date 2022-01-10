@@ -43,7 +43,7 @@ class NewsModel extends Render_Model
   {
     if ($inputs == null || !is_array($inputs)) {
       return [
-        'data' => null,
+        'data' => [],
         'length' => 0
       ];
     }
