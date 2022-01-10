@@ -27,7 +27,7 @@ class DaftarArtikel extends Render_Controller
         // Page Settings
         $this->title = is_null($id) ? 'Tambah Artikel' : 'Ubah Artikel';
         $this->navigation = ['Daftar Artikel'];
-        $this->plugins = ['datatables', 'summernote', 'select2'];
+        $this->plugins = ['datatables', 'select2'];
         // Breadcrumb setting
         $this->breadcrumb_1 = 'Dashboard';
         $this->breadcrumb_1_url = base_url() . 'admin/dashboard';
