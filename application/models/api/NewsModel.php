@@ -56,11 +56,11 @@ class NewsModel extends Render_Model
           'id' => $input['id'],
           'name' => $input['nama']
         ],
-        "author" => $input['user_nama'],
+        "author" => null,
         "title" => $input['nama'],
         "description" => $input['excerpt'],
         "url" => base_url('artikel/detail/') . $input['slug'],
-        "urlToImage" => $input['foto'],
+        "urlToImage" => base_url('/files/artikel/daftar_artikel/') . $input['foto'],
         "publishedAt" => $input['created_at'],
         "content" => $input['detail'],
       ];

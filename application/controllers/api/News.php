@@ -19,8 +19,6 @@ class News extends RestController
     ], 200);
   }
 
-
-
   public function provinsi_get()
   {
     $key = $this->input->get('q');
