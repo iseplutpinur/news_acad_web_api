@@ -14,8 +14,8 @@ class News extends RestController
 
     $this->response([
       'status' => "ok",
-      'length' => $result['length'],
-      'results' => $result['data'],
+      'totalResults' => $result['length'],
+      'articles' => $result['data'],
     ], 200);
   }
 
